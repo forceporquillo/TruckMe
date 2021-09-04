@@ -4,7 +4,7 @@ import { StatusBar } from 'expo-status-bar';
 import * as Font from "expo-font";
 import AppLoading from 'expo-app-loading';
 
-import LoginScreen from './screens/LoginScreen';
+import MainNavigator from './navigation/MainNavigator';
 
 const fetchFonts = () => {
   return Font.loadAsync({
@@ -26,7 +26,7 @@ export default function App() {
   }
 
   return (
-    <LoginScreen></LoginScreen>
+    <MainNavigator></MainNavigator>
   );
 }
 

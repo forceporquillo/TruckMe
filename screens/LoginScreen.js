@@ -7,6 +7,7 @@ import {
   Image,
   Button,
   TouchableOpacity,
+  TouchableNativeFeedback
 } from "react-native";
 import { StatusBar } from "expo-status-bar";
 import { Ionicons } from "@expo/vector-icons";
@@ -46,7 +47,13 @@ const LoginScreen = (props) => {
       </TouchableOpacity>
 
       <View style={styles.buttonContainer}>
-        <TouchableOpacity activeOpacity={0.3} >
+        <TouchableOpacity activeOpacity={0.5} 
+          onPress={() => {
+            props.navigation.replace({
+              routeName: "AppProper"
+            });
+          }}
+        >
           <View style={styles.button}>
             <Text style={styles.buttonText}>Sign In</Text>
           </View>

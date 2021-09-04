@@ -1,6 +1,7 @@
 {
   "expo": {
     "name": "TruckMe",
+    "description": "A Management App for Trucking Services",
     "slug": "TruckMe",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -23,7 +24,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.capstone.truckme"
     },
     "web": {
       "favicon": "./assets/favicon.png"

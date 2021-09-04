@@ -1,9 +1,11 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import { StatusBar } from 'expo-status-bar';
 
-const FleetScreen = props => {
+const ManageFleetScreen = props => {
   return (
     <View style={styles.screen}>
+      <StatusBar style="auto" />
       <Text style={styles.text}>Manage Fleet Section</Text>
     </View>
   );
@@ -21,4 +23,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default FleetScreen;
+export default ManageFleetScreen;
